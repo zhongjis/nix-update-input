@@ -27,7 +27,7 @@
           then
             nix flake update
           else
-            nix flake lock --update-input $input
+            nix flake update $input
           fi
         '';
       });
